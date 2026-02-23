@@ -1,0 +1,506 @@
+2026-02-23 09:46:03,085 - Knowledge - INFO - Created shared MongoDB connection pool
+2026-02-23 09:46:03,390 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2026-02-23 09:46:03,581 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2026-02-23 09:46:03,795 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=10, max_concurrent_llm_calls=50
+2026-02-23 09:46:05,566 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-02-23 09:46:05,732 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2026-02-23 09:46:05,913 - Knowledge - INFO - load persisted knowledge: begin
+2026-02-23 09:46:06,091 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2026-02-23 09:46:06,280 - Knowledge - INFO - load persisted knowledge: end
+2026-02-23 09:46:06,505 - Knowledge - WARNING - No persisted knowledge found. Files will be queued during start()
+2026-02-23 09:46:06,707 - Knowledge - INFO - Redis support added with prefix knowledge:b8153bi:
+2026-02-23 09:46:06,958 - Knowledge - INFO - Starting knowledge initialization for ID: FeIhCI-b8153bi
+2026-02-23 09:46:07,109 - Knowledge - INFO - 🔍 Checking Redis for build_id: b8153bi
+2026-02-23 09:46:07,272 - Knowledge - INFO - 🔍 Full session ID: FeIhCI-b8153bi
+2026-02-23 09:46:07,418 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b8153bi:
+2026-02-23 09:46:07,616 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2026-02-23 09:46:07,824 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-02-23 09:46:08,001 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b8153bi
+2026-02-23 09:46:08,175 - Knowledge - WARNING - ❌ No Redis cache found
+2026-02-23 09:46:08,383 - Knowledge - INFO - 📁 Loading knowledge from disk...
+2026-02-23 09:46:08,613 - Knowledge - INFO - load persisted docinfo: begin
+2026-02-23 09:46:08,791 - Knowledge - INFO - load persisted docinfo: end
+2026-02-23 09:46:08,946 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-02-23 09:46:09,102 - Knowledge - INFO - ✅ load_from_redis method found - attempting Redis load
+2026-02-23 09:46:09,301 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-02-23 09:46:09,510 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b8153bi
+2026-02-23 09:46:09,723 - Knowledge - WARNING - ❌ No Redis cache found
+2026-02-23 09:46:09,938 - Knowledge - INFO - ❌ Redis load returned False - falling back to file loading
+2026-02-23 09:46:10,127 - Knowledge - INFO - load persisted knowledge: begin
+2026-02-23 09:46:10,356 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2026-02-23 09:46:10,553 - Knowledge - INFO - load persisted knowledge: end
+2026-02-23 09:46:10,738 - Knowledge - INFO - 📁 Disk load complete in 2.20s
+2026-02-23 09:46:10,921 - Knowledge - INFO - Populating ingest queue with source files...
+2026-02-23 09:46:11,145 - Knowledge - INFO - Added 85 files from /app/data/T0015/325511/b8153bi/entservices-connectivity-325511 to ingest queue
+2026-02-23 09:46:11,323 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 159, Duration: 0ms
+2026-02-23 09:46:11,529 - Knowledge - INFO - Worker kw1 created using shared MongoDB connection pool
+2026-02-23 09:46:11,731 - Knowledge - INFO - knowledge worker kw1 start
+2026-02-23 09:46:11,732 - Knowledge - INFO - Worker kw2 created using shared MongoDB connection pool
+2026-02-23 09:46:11,934 - Knowledge - INFO - [kw1] Queue=85, InProgress=0, PendingWorkers=0/1, Completed=0/85 (0.0%)
+2026-02-23 09:46:12,052 - Knowledge - INFO - knowledge worker kw2 start
+2026-02-23 09:46:12,054 - Knowledge - INFO - Worker kw3 created using shared MongoDB connection pool
+2026-02-23 09:46:12,163 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=85, active_workers=0/2
+2026-02-23 09:46:12,246 - Knowledge - INFO - [kw2] Queue=85, InProgress=0, PendingWorkers=0/2, Completed=0/85 (0.0%)
+2026-02-23 09:46:12,337 - Knowledge - INFO - knowledge worker kw3 start
+2026-02-23 09:46:12,337 - Knowledge - INFO - Worker kw4 created using shared MongoDB connection pool
+2026-02-23 09:46:12,435 - Knowledge - INFO - Worker kw1 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cov_build.sh
+2026-02-23 09:46:12,515 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=85, active_workers=1/3
+2026-02-23 09:46:12,595 - Knowledge - INFO - [kw3] Queue=81, InProgress=0, PendingWorkers=1/3, Completed=0/85 (0.0%)
+2026-02-23 09:46:12,676 - Knowledge - INFO - knowledge worker kw4 start
+2026-02-23 09:46:12,676 - Knowledge - INFO - Worker kw5 created using shared MongoDB connection pool
+2026-02-23 09:46:12,753 - Knowledge - INFO - Worker kw1 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/Bluetooth.h
+2026-02-23 09:46:12,848 - Knowledge - INFO - Worker kw2 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/cmake/FindBTMGR.cmake
+2026-02-23 09:46:12,968 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=81, active_workers=2/4
+2026-02-23 09:46:13,057 - Knowledge - INFO - [kw4] Queue=77, InProgress=0, PendingWorkers=2/4, Completed=0/85 (0.0%)
+2026-02-23 09:46:13,134 - Knowledge - INFO - knowledge worker kw5 start
+2026-02-23 09:46:13,135 - Knowledge - INFO - Worker kw6 created using shared MongoDB connection pool
+2026-02-23 09:46:13,214 - Knowledge - INFO - Worker kw1 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/Module.h
+2026-02-23 09:46:13,332 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/cmake/FindBTMGR.cmake (ext=.cmake, size=1591)
+2026-02-23 09:46:13,448 - Knowledge - INFO - Worker kw3 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/CHANGELOG.md
+2026-02-23 09:46:13,522 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=77, active_workers=3/5
+2026-02-23 09:46:13,638 - Knowledge - INFO - [kw5] Queue=73, InProgress=0, PendingWorkers=3/5, Completed=0/85 (0.0%)
+2026-02-23 09:46:13,736 - Knowledge - INFO - knowledge worker kw6 start
+2026-02-23 09:46:13,736 - Knowledge - INFO - Worker kw7 created using shared MongoDB connection pool
+2026-02-23 09:46:13,820 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/Module.h (ext=.h, size=873)
+2026-02-23 09:46:13,928 - Knowledge - INFO - Worker kw2 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/README.md
+2026-02-23 09:46:14,020 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/CHANGELOG.md (ext=.md, size=1109)
+2026-02-23 09:46:14,100 - Knowledge - INFO - Worker kw4 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindUdev.cmake
+2026-02-23 09:46:14,182 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=73, active_workers=4/6
+2026-02-23 09:46:14,325 - Knowledge - INFO - [kw6] Queue=69, InProgress=0, PendingWorkers=4/6, Completed=0/85 (0.0%)
+2026-02-23 09:46:14,385 - Knowledge - INFO - knowledge worker kw7 start
+2026-02-23 09:46:14,385 - Knowledge - INFO - Worker kw8 created using shared MongoDB connection pool
+2026-02-23 09:46:14,476 - Knowledge - INFO - Worker kw1 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/CMakeLists.txt
+2026-02-23 09:46:14,571 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/README.md (ext=.md, size=8172)
+2026-02-23 09:46:14,677 - Knowledge - INFO - Worker kw3 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/CMakeLists.txt
+2026-02-23 09:46:14,811 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindUdev.cmake (ext=.cmake, size=769)
+2026-02-23 09:46:14,923 - Knowledge - INFO - Worker kw5 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindGStreamer.cmake
+2026-02-23 09:46:15,002 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=69, active_workers=5/7
+2026-02-23 09:46:15,076 - Knowledge - INFO - [kw7] Queue=65, InProgress=0, PendingWorkers=5/7, Completed=0/85 (0.0%)
+2026-02-23 09:46:15,173 - Knowledge - INFO - knowledge worker kw8 start
+2026-02-23 09:46:15,173 - Knowledge - INFO - Worker kw9 created using shared MongoDB connection pool
+2026-02-23 09:46:15,269 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/CMakeLists.txt (ext=.txt, size=2360)
+2026-02-23 09:46:15,339 - Knowledge - INFO - Worker kw2 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/Bluetooth.cpp
+2026-02-23 09:46:15,419 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/CMakeLists.txt (ext=.txt, size=1980)
+2026-02-23 09:46:15,537 - Knowledge - INFO - Worker kw4 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindNopoll.cmake
+2026-02-23 09:46:15,611 - Knowledge - INFO - Worker kw5 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindLMPLAYER.cmake
+2026-02-23 09:46:15,686 - Knowledge - INFO - Worker kw6 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindLibSoup.cmake
+2026-02-23 09:46:15,786 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=65, active_workers=6/8
+2026-02-23 09:46:15,871 - Knowledge - INFO - [kw8] Queue=61, InProgress=0, PendingWorkers=6/8, Completed=0/85 (0.0%)
+2026-02-23 09:46:15,997 - Knowledge - INFO - knowledge worker kw9 start
+2026-02-23 09:46:15,997 - Knowledge - INFO - Worker kw10 created using shared MongoDB connection pool
+2026-02-23 09:46:16,199 - Knowledge - INFO - Worker kw2 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/Module.cpp
+2026-02-23 09:46:16,299 - Knowledge - INFO - Worker kw3 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindDL.cmake
+2026-02-23 09:46:16,400 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindNopoll.cmake (ext=.cmake, size=1155)
+2026-02-23 09:46:16,494 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindLMPLAYER.cmake (ext=.cmake, size=1899)
+2026-02-23 09:46:16,587 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindLibSoup.cmake (ext=.cmake, size=1398)
+2026-02-23 09:46:16,702 - Knowledge - INFO - Worker kw7 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/Findjsoncpp.cmake
+2026-02-23 09:46:16,800 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=61, active_workers=7/9
+2026-02-23 09:46:16,874 - Knowledge - INFO - [kw9] Queue=57, InProgress=0, PendingWorkers=7/9, Completed=0/85 (0.0%)
+2026-02-23 09:46:16,956 - Knowledge - INFO - knowledge worker kw10 start
+2026-02-23 09:46:16,956 - Knowledge - INFO - Worker kw11 created using shared MongoDB connection pool
+2026-02-23 09:46:17,069 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/Module.cpp (ext=.cpp, size=765)
+2026-02-23 09:46:17,147 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindDL.cmake (ext=.cmake, size=796)
+2026-02-23 09:46:17,221 - Knowledge - INFO - Worker kw4 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindCTRLM.cmake
+2026-02-23 09:46:17,344 - Knowledge - INFO - Worker kw5 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindCurl.cmake
+2026-02-23 09:46:17,422 - Knowledge - INFO - Worker kw6 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindGStreamerVideo.cmake
+2026-02-23 09:46:17,494 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/Findjsoncpp.cmake (ext=.cmake, size=1853)
+2026-02-23 09:46:17,604 - Knowledge - INFO - Worker kw8 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindTTS.cmake
+2026-02-23 09:46:17,684 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=57, active_workers=8/10
+2026-02-23 09:46:17,766 - Knowledge - INFO - [kw10] Queue=53, InProgress=0, PendingWorkers=8/10, Completed=0/85 (0.0%)
+2026-02-23 09:46:17,865 - Knowledge - INFO - knowledge worker kw11 start
+2026-02-23 09:46:17,866 - Knowledge - INFO - Worker kw12 created using shared MongoDB connection pool
+2026-02-23 09:46:18,285 - Knowledge - INFO - Split /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/Bluetooth.cpp (84656 bytes) into 3 chunks of ~32KB
+2026-02-23 09:46:18,376 - Knowledge - INFO - Worker kw3 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindAC.cmake
+2026-02-23 09:46:18,501 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindCTRLM.cmake (ext=.cmake, size=1245)
+2026-02-23 09:46:18,593 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindCurl.cmake (ext=.cmake, size=1002)
+2026-02-23 09:46:18,736 - Knowledge - INFO - Worker kw6 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindRDKStorageManager.cmake
+2026-02-23 09:46:18,836 - Knowledge - INFO - Worker kw7 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindPlabels.cmake
+2026-02-23 09:46:18,927 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindTTS.cmake (ext=.cmake, size=1379)
+2026-02-23 09:46:19,018 - Knowledge - INFO - Worker kw9 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindSqliteSee.cmake
+2026-02-23 09:46:19,114 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=53, active_workers=9/11
+2026-02-23 09:46:19,230 - Knowledge - INFO - [kw11] Queue=49, InProgress=0, PendingWorkers=9/11, Completed=0/85 (0.0%)
+2026-02-23 09:46:19,337 - Knowledge - INFO - knowledge worker kw12 start
+2026-02-23 09:46:19,337 - Knowledge - INFO - Worker kw13 created using shared MongoDB connection pool
+2026-02-23 09:46:19,537 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindAC.cmake (ext=.cmake, size=1567)
+2026-02-23 09:46:19,655 - Knowledge - INFO - Worker kw4 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindSqlite.cmake
+2026-02-23 09:46:19,742 - Knowledge - INFO - Worker kw5 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindGLIB.cmake
+2026-02-23 09:46:19,847 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindRDKStorageManager.cmake (ext=.cmake, size=983)
+2026-02-23 09:46:19,859 - Knowledge - INFO - [LLM_CALL] Completed: cov_build.sh:chunk1, Duration: 3748ms, PromptTokens: 2524, CompletionTokens: 59, Cost: $0.00028
+2026-02-23 09:46:19,939 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindPlabels.cmake (ext=.cmake, size=1051)
+2026-02-23 09:46:20,015 - Knowledge - INFO - Worker kw8 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindCEC.cmake
+2026-02-23 09:46:20,095 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindSqliteSee.cmake (ext=.cmake, size=774)
+2026-02-23 09:46:20,319 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=49, active_workers=10/12
+2026-02-23 09:46:20,417 - Knowledge - INFO - [kw12] Queue=45, InProgress=0, PendingWorkers=10/12, Completed=0/85 (0.0%)
+2026-02-23 09:46:20,522 - Knowledge - INFO - knowledge worker kw13 start
+2026-02-23 09:46:20,523 - Knowledge - INFO - Worker kw14 created using shared MongoDB connection pool
+2026-02-23 09:46:20,715 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindSqlite.cmake (ext=.cmake, size=771)
+2026-02-23 09:46:20,794 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindGStreamer.cmake (small file (2703 bytes))
+2026-02-23 09:46:20,868 - Knowledge - INFO - Worker kw6 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindNXCLIENT.cmake
+2026-02-23 09:46:20,992 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cov_build.sh
+2026-02-23 09:46:20,993 - Knowledge - INFO - Worker kw10 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsLOG_MILESTONE.h
+2026-02-23 09:46:20,993 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:46:21,072 - Knowledge - INFO - Worker kw7 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindIARMBus.cmake
+2026-02-23 09:46:21,155 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindCEC.cmake (ext=.cmake, size=1947)
+2026-02-23 09:46:21,240 - Knowledge - INFO - Worker kw9 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindBCM_HOST.cmake
+2026-02-23 09:46:21,338 - Knowledge - INFO - Worker kw11 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsgetFileContent.h
+2026-02-23 09:46:21,444 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=45, active_workers=11/13
+2026-02-23 09:46:21,560 - Knowledge - INFO - [kw13] Queue=41, InProgress=0, PendingWorkers=11/13, Completed=4/85 (4.7%)
+2026-02-23 09:46:21,640 - Knowledge - INFO - knowledge worker kw14 start
+2026-02-23 09:46:21,640 - Knowledge - INFO - Worker kw15 created using shared MongoDB connection pool
+2026-02-23 09:46:21,731 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:46:21,925 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindNXCLIENT.cmake (ext=.cmake, size=1813)
+2026-02-23 09:46:22,132 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsLOG_MILESTONE.h (ext=.h, size=810)
+2026-02-23 09:46:22,248 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/CHANGELOG.md
+2026-02-23 09:46:22,378 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindIARMBus.cmake (ext=.cmake, size=1734)
+2026-02-23 09:46:22,466 - Knowledge - INFO - Worker kw8 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindDS.cmake
+2026-02-23 09:46:22,669 - Knowledge - INFO - Worker kw9 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/README.md
+2026-02-23 09:46:22,745 - Knowledge - INFO - Worker kw11 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/WSEndpoint.cpp
+2026-02-23 09:46:22,874 - Knowledge - INFO - Worker kw12 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/WSEndpoint.h
+2026-02-23 09:46:22,959 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=41, active_workers=12/14
+2026-02-23 09:46:23,046 - Knowledge - INFO - [kw14] Queue=37, InProgress=0, PendingWorkers=12/14, Completed=8/85 (9.4%)
+2026-02-23 09:46:23,130 - Knowledge - INFO - knowledge worker kw15 start
+2026-02-23 09:46:23,131 - Knowledge - INFO - Worker kw16 created using shared MongoDB connection pool
+2026-02-23 09:46:23,209 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindUdev.cmake
+2026-02-23 09:46:23,378 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindGStreamerVideo.cmake (small file (2892 bytes))
+2026-02-23 09:46:23,476 - Knowledge - INFO - Worker kw10 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsgetRFCConfig.h
+2026-02-23 09:46:23,573 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/CMakeLists.txt
+2026-02-23 09:46:23,677 - Knowledge - INFO - Worker kw7 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindNEXUS.cmake
+2026-02-23 09:46:23,774 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindDS.cmake (ext=.cmake, size=1842)
+2026-02-23 09:46:23,914 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/README.md (ext=.md, size=70)
+2026-02-23 09:46:23,961 - Knowledge - INFO - [LLM_CALL] Completed: FindGLIB.cmake:chunk1, Duration: 2142ms, PromptTokens: 3678, CompletionTokens: 59, Cost: $0.00039
+2026-02-23 09:46:24,001 - Knowledge - INFO - Worker kw11 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/PingPong/PingPongDisabled.h
+2026-02-23 09:46:24,072 - Knowledge - INFO - Worker kw12 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/Roles/SingleClientServer.h
+2026-02-23 09:46:24,247 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=37, active_workers=13/15
+2026-02-23 09:46:24,341 - Knowledge - INFO - [kw15] Queue=33, InProgress=0, PendingWorkers=13/15, Completed=8/85 (9.4%)
+2026-02-23 09:46:24,436 - Knowledge - INFO - knowledge worker kw16 start
+2026-02-23 09:46:24,436 - Knowledge - INFO - Worker kw17 created using shared MongoDB connection pool
+2026-02-23 09:46:24,529 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindNopoll.cmake
+2026-02-23 09:46:24,765 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsgetRFCConfig.h (ext=.h, size=1043)
+2026-02-23 09:46:24,857 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindDL.cmake
+2026-02-23 09:46:25,010 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindNEXUS.cmake (small file (2835 bytes))
+2026-02-23 09:46:25,067 - Knowledge - INFO - Worker kw8 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindAamp.cmake
+2026-02-23 09:46:25,156 - Knowledge - INFO - Worker kw9 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsIarm.h
+2026-02-23 09:46:25,242 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindGLIB.cmake
+2026-02-23 09:46:25,243 - Knowledge - INFO - Worker kw13 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/Encryption/TlsEnabled.h
+2026-02-23 09:46:25,243 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:46:25,351 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/PingPong/PingPongDisabled.h (ext=.h, size=1228)
+2026-02-23 09:46:25,465 - Knowledge - INFO - Worker kw12 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/Roles/Client.h
+2026-02-23 09:46:25,543 - Knowledge - INFO - Worker kw14 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/CommunicationInterface/CommandInterface.h
+2026-02-23 09:46:25,623 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=33, active_workers=14/16
+2026-02-23 09:46:25,701 - Knowledge - INFO - [kw16] Queue=29, InProgress=0, PendingWorkers=14/16, Completed=12/85 (14.1%)
+2026-02-23 09:46:25,793 - Knowledge - INFO - knowledge worker kw17 start
+2026-02-23 09:46:25,793 - Knowledge - INFO - Worker kw18 created using shared MongoDB connection pool
+2026-02-23 09:46:25,886 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindCTRLM.cmake
+2026-02-23 09:46:25,977 - Knowledge - INFO - Worker kw10 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsThreadRAII.h
+2026-02-23 09:46:26,056 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindAC.cmake
+2026-02-23 09:46:26,132 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:46:26,233 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindAamp.cmake (small file (2167 bytes))
+2026-02-23 09:46:26,361 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindBCM_HOST.cmake (small file (2134 bytes))
+2026-02-23 09:46:26,470 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:46:26,562 - Knowledge - INFO - Worker kw13 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/Encryption/NoEncryption.h
+2026-02-23 09:46:26,648 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindLibSoup.cmake
+2026-02-23 09:46:26,730 - Knowledge - INFO - Worker kw11 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/PingPong/PingPongEnabled.h
+2026-02-23 09:46:26,853 - Knowledge - INFO - Worker kw12 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/ConnectionInitializationResult.h
+2026-02-23 09:46:26,972 - Knowledge - INFO - Worker kw14 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Response.cpp
+2026-02-23 09:46:27,074 - Knowledge - INFO - Worker kw15 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Response.h
+2026-02-23 09:46:27,158 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=29, active_workers=15/17
+2026-02-23 09:46:27,188 - Knowledge - INFO - [LLM_CALL] Completed: Bluetooth.h:chunk1, Duration: 10161ms, PromptTokens: 5376, CompletionTokens: 704, Cost: $0.00082
+2026-02-23 09:46:27,293 - Knowledge - INFO - [kw17] Queue=25, InProgress=0, PendingWorkers=15/17, Completed=20/85 (23.5%)
+2026-02-23 09:46:27,427 - Knowledge - INFO - knowledge worker kw18 start
+2026-02-23 09:46:27,427 - Knowledge - INFO - Worker kw19 created using shared MongoDB connection pool
+2026-02-23 09:46:27,507 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindSqlite.cmake
+2026-02-23 09:46:27,628 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsThreadRAII.h (ext=.h, size=1417)
+2026-02-23 09:46:27,836 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/Findjsoncpp.cmake
+2026-02-23 09:46:28,017 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsIarm.h (small file (2992 bytes))
+2026-02-23 09:46:28,136 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindGStreamer.cmake
+2026-02-23 09:46:28,229 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/Encryption/NoEncryption.h (ext=.h, size=1649)
+2026-02-23 09:46:28,306 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindGStreamerVideo.cmake
+2026-02-23 09:46:28,476 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/ConnectionInitializationResult.h (ext=.h, size=1319)
+2026-02-23 09:46:28,551 - Knowledge - INFO - Worker kw14 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Notification.cpp
+2026-02-23 09:46:28,655 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Response.h (ext=.h, size=1276)
+2026-02-23 09:46:28,901 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/Bluetooth.h
+2026-02-23 09:46:28,902 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:46:28,908 - Knowledge - INFO - Worker kw16 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/cSettings.h
+2026-02-23 09:46:28,909 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 286, Duration: 0ms
+2026-02-23 09:46:29,002 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=25, active_workers=16/18
+2026-02-23 09:46:29,103 - Knowledge - INFO - [kw18] Queue=21, InProgress=0, PendingWorkers=16/18, Completed=24/85 (28.2%)
+2026-02-23 09:46:29,223 - Knowledge - INFO - knowledge worker kw19 start
+2026-02-23 09:46:29,223 - Knowledge - INFO - Worker kw20 created using shared MongoDB connection pool
+2026-02-23 09:46:29,442 - Knowledge - INFO - Worker kw10 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsTelemetry.h
+2026-02-23 09:46:29,555 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindPlabels.cmake
+2026-02-23 09:46:29,772 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindLMPLAYER.cmake
+2026-02-23 09:46:29,840 - Knowledge - INFO - Worker kw13 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/CommunicationInterface/BinaryInterface.h
+2026-02-23 09:46:29,928 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindRDKStorageManager.cmake
+2026-02-23 09:46:30,051 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/WSEndpoint.h (small file (2873 bytes))
+2026-02-23 09:46:30,129 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Notification.cpp (ext=.cpp, size=1518)
+2026-02-23 09:46:30,231 - Knowledge - INFO - Worker kw15 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Notification.h
+2026-02-23 09:46:30,472 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindTTS.cmake
+2026-02-23 09:46:30,553 - Knowledge - INFO - Worker kw16 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsBIT.h
+2026-02-23 09:46:30,639 - Knowledge - INFO - [kw4] Queue=21, InProgress=0, PendingWorkers=16/19, Completed=30/85 (35.3%)
+2026-02-23 09:46:30,640 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 1731ms
+2026-02-23 09:46:30,800 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=21, active_workers=17/19
+2026-02-23 09:46:30,915 - Knowledge - INFO - [kw19] Queue=17, InProgress=0, PendingWorkers=17/19, Completed=30/85 (35.3%)
+2026-02-23 09:46:31,027 - Knowledge - INFO - knowledge worker kw20 start
+2026-02-23 09:46:31,145 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsTelemetry.h (ext=.h, size=1892)
+2026-02-23 09:46:31,229 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindIARMBus.cmake
+2026-02-23 09:46:31,323 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindCurl.cmake
+2026-02-23 09:46:31,414 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/CommunicationInterface/BinaryInterface.h (ext=.h, size=1699)
+2026-02-23 09:46:31,488 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindNXCLIENT.cmake
+2026-02-23 09:46:31,686 - Knowledge - INFO - Worker kw14 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Request.cpp
+2026-02-23 09:46:31,784 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Notification.h (ext=.h, size=1157)
+2026-02-23 09:46:31,858 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindCEC.cmake
+2026-02-23 09:46:31,960 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsBIT.h (ext=.h, size=1312)
+2026-02-23 09:46:32,050 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=21, active_workers=17/20
+2026-02-23 09:46:32,133 - Knowledge - INFO - Progress: 28.2% | Files: 30/85 | Rate: 1.16 files/sec | Queue: 17
+2026-02-23 09:46:32,134 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:46:32,135 - Knowledge - INFO - Worker kw17 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsProcess.h
+2026-02-23 09:46:32,157 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:46:32,211 - Knowledge - INFO - Worker kw18 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsLogging.h
+2026-02-23 09:46:32,291 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=17, active_workers=18/20
+2026-02-23 09:46:32,375 - Knowledge - INFO - [kw20] Queue=13, InProgress=0, PendingWorkers=18/20, Completed=32/85 (37.6%)
+2026-02-23 09:46:32,514 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:46:32,589 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindNEXUS.cmake
+2026-02-23 09:46:32,667 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindGLIB.cmake
+2026-02-23 09:46:32,765 - Knowledge - INFO - Worker kw13 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/CommunicationInterface/JsonRpcInterface.h
+2026-02-23 09:46:32,980 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Request.cpp (ext=.cpp, size=1781)
+2026-02-23 09:46:33,060 - Knowledge - INFO - Worker kw15 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Request.h
+2026-02-23 09:46:33,142 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindDS.cmake
+2026-02-23 09:46:33,254 - Knowledge - INFO - Worker kw16 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsJsonRpc.h
+2026-02-23 09:46:33,272 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 270, Duration: 0ms
+2026-02-23 09:46:33,479 - Knowledge - INFO - [kw3] Queue=9, InProgress=0, PendingWorkers=18/20, Completed=36/85 (42.4%)
+2026-02-23 09:46:33,597 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindSqliteSee.cmake
+2026-02-23 09:46:33,709 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/Roles/Client.h (small file (2756 bytes))
+2026-02-23 09:46:33,710 - Knowledge - INFO - Worker kw17 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsString.h
+2026-02-23 09:46:33,790 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cov_build.sh
+2026-02-23 09:46:33,908 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsLogging.h (ext=.h, size=1834)
+2026-02-23 09:46:34,067 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=13, active_workers=19/20
+2026-02-23 09:46:34,147 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsLOG_MILESTONE.h
+2026-02-23 09:46:34,526 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/CommunicationInterface/CommandInterface.h (small file (2143 bytes))
+2026-02-23 09:46:34,646 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Request.h (ext=.h, size=1283)
+2026-02-23 09:46:34,874 - Knowledge - INFO - Worker kw16 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsSynchroIarm.hpp
+2026-02-23 09:46:34,879 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindAamp.cmake
+2026-02-23 09:46:35,004 - Knowledge - INFO - Async storing batch of 4 embeddings
+2026-02-23 09:46:35,018 - Knowledge - INFO - Worker kw19 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsFile.h
+2026-02-23 09:46:35,030 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 1759ms
+2026-02-23 09:46:35,100 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=9, active_workers=19/20
+2026-02-23 09:46:35,377 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/cmake/FindBCM_HOST.cmake
+2026-02-23 09:46:35,492 - Knowledge - INFO - Worker kw17 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsisValidInt.h
+2026-02-23 09:46:35,575 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/Bluetooth.h
+2026-02-23 09:46:35,669 - Knowledge - INFO - Worker kw18 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/PluginInterfaceBuilder.h
+2026-02-23 09:46:35,927 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsgetRFCConfig.h
+2026-02-23 09:46:36,159 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Response.cpp (small file (2421 bytes))
+2026-02-23 09:46:36,210 - Knowledge - INFO - Worker kw15 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/frontpanel.cpp
+2026-02-23 09:46:36,585 - Knowledge - INFO - Worker kw4 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsCStr.h
+2026-02-23 09:46:36,680 - Knowledge - INFO - Worker kw19 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsfileExists.h
+2026-02-23 09:46:36,821 - Knowledge - INFO - Progress: 42.4% | Files: 36/85 | Rate: 1.19 files/sec | Queue: 1
+2026-02-23 09:46:36,823 - Knowledge - INFO - [kw7] Queue=1, InProgress=0, PendingWorkers=20/20, Completed=36/85 (42.4%)
+2026-02-23 09:46:36,823 - Knowledge - INFO - [LLM_CALL] Completed: Bluetooth.cpp:chunk1, Duration: 17383ms, PromptTokens: 15106, CompletionTokens: 1476, Cost: $0.00210
+2026-02-23 09:46:37,103 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/README.md
+2026-02-23 09:46:37,105 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsisValidInt.h (ext=.h, size=1601)
+2026-02-23 09:46:37,215 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/Module.h
+2026-02-23 09:46:37,309 - Knowledge - INFO - Worker kw18 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsInputValidator.h
+2026-02-23 09:46:37,423 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsThreadRAII.h
+2026-02-23 09:46:37,843 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsCStr.h (ext=.h, size=746)
+2026-02-23 09:46:37,980 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsfileExists.h (ext=.h, size=880)
+2026-02-23 09:46:38,281 - Knowledge - INFO - Batch sizing: calculated=1, max_allowed=10, queue=1, active_workers=19/20
+2026-02-23 09:46:38,404 - Knowledge - INFO - Worker kw20 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/frontpanel.h
+2026-02-23 09:46:38,407 - Knowledge - INFO - Async storing batch of 4 embeddings
+2026-02-23 09:46:38,543 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsIarm.h
+2026-02-23 09:46:38,615 - Knowledge - INFO - Worker kw17 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilssyncPersistFile.h
+2026-02-23 09:46:38,777 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/CMakeLists.txt
+2026-02-23 09:46:38,838 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:46:38,845 - Knowledge - INFO - Worker kw18 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsSynchro.hpp
+2026-02-23 09:46:38,946 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsTelemetry.h
+2026-02-23 09:46:39,071 - Knowledge - INFO - Worker kw4 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsController.h
+2026-02-23 09:46:39,260 - Knowledge - INFO - Worker kw19 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/PowerManagerInterface.h
+2026-02-23 09:46:39,283 - Knowledge - INFO - [LLM_CALL] Completed: SingleClientServer.h:chunk1, Duration: 7148ms, PromptTokens: 2132, CompletionTokens: 333, Cost: $0.00035
+2026-02-23 09:46:39,519 - Knowledge - INFO - Worker kw20 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/services.cmake
+2026-02-23 09:46:39,656 - Knowledge - INFO - Worker kw3 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/build_dependencies.sh
+2026-02-23 09:46:39,850 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilssyncPersistFile.h (ext=.h, size=1541)
+2026-02-23 09:46:40,045 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/CommunicationInterface/CommandInterface.h
+2026-02-23 09:46:40,310 - Knowledge - INFO - Worker kw4 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsUnused.h
+2026-02-23 09:46:40,428 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/PowerManagerInterface.h (ext=.h, size=1006)
+2026-02-23 09:46:40,511 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/Roles/SingleClientServer.h
+2026-02-23 09:46:40,512 - Knowledge - INFO - [LLM_CALL] Completed: PingPongEnabled.h:chunk1, Duration: 8377ms, PromptTokens: 3044, CompletionTokens: 551, Cost: $0.00052
+2026-02-23 09:46:40,584 - Knowledge - INFO - Worker kw20 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/CONTRIBUTING.md
+2026-02-23 09:46:40,671 - Knowledge - INFO - Async storage completed for 4 embeddings
+2026-02-23 09:46:40,766 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsProcess.h (small file (2699 bytes))
+2026-02-23 09:46:40,921 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Response.cpp
+2026-02-23 09:46:41,012 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsUnused.h (ext=.h, size=750)
+2026-02-23 09:46:41,106 - Knowledge - INFO - Worker kw19 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsSearchRDKProfile.h
+2026-02-23 09:46:41,286 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/PingPong/PingPongEnabled.h
+2026-02-23 09:46:41,296 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 270, Duration: 783ms
+2026-02-23 09:46:41,386 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/CONTRIBUTING.md (ext=.md, size=267)
+2026-02-23 09:46:41,670 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Notification.cpp
+2026-02-23 09:46:41,738 - Knowledge - INFO - Worker kw4 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/tptimer.h
+2026-02-23 09:46:41,858 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsFile.h (small file (2625 bytes))
+2026-02-23 09:46:42,135 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 1623ms
+2026-02-23 09:46:42,183 - Knowledge - INFO - Worker kw20 processing /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/CHANGELOG.md
+2026-02-23 09:46:42,309 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Request.cpp
+2026-02-23 09:46:42,460 - Knowledge - INFO - Async storage completed for 4 embeddings
+2026-02-23 09:46:42,623 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsSearchRDKProfile.h (small file (2043 bytes))
+2026-02-23 09:46:42,677 - Knowledge - INFO - Progress: 47.1% | Files: 41/85 | Rate: 1.13 files/sec | Queue: 0
+2026-02-23 09:46:42,743 - Knowledge - INFO - [LLM_CALL] Completed: UtilsgetFileContent.h:chunk1, Duration: 13835ms, PromptTokens: 5184, CompletionTokens: 489, Cost: $0.00071
+2026-02-23 09:46:42,780 - Knowledge - INFO - Fast-tracked /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/CHANGELOG.md (ext=.md, size=8604)
+2026-02-23 09:46:43,343 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsgetFileContent.h
+2026-02-23 09:46:43,441 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:46:43,527 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:46:43,670 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsFile.h
+2026-02-23 09:46:43,676 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 270, Duration: 0ms
+2026-02-23 09:46:43,780 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/WSEndpoint.h
+2026-02-23 09:46:44,069 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsfileExists.h
+2026-02-23 09:46:44,264 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 588ms
+2026-02-23 09:46:44,595 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/Roles/SingleClientServer.h
+2026-02-23 09:46:44,609 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/PowerManagerInterface.h
+2026-02-23 09:46:44,678 - Knowledge - INFO - Progress: 56.5% | Files: 48/85 | Rate: 1.18 files/sec | Queue: 0
+2026-02-23 09:46:44,730 - Knowledge - INFO - [LLM_CALL] Completed: WSEndpoint.cpp:chunk1, Duration: 14091ms, PromptTokens: 5202, CompletionTokens: 858, Cost: $0.00086
+2026-02-23 09:46:44,859 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/Roles/Client.h
+2026-02-23 09:46:45,113 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsSearchRDKProfile.h
+2026-02-23 09:46:45,185 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/WSEndpoint.cpp
+2026-02-23 09:46:45,548 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/ConnectionInitializationResult.h
+2026-02-23 09:46:48,653 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 270, Duration: 0ms
+2026-02-23 09:46:48,915 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:46:48,958 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 305ms
+2026-02-23 09:46:49,183 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsgetFileContent.h
+2026-02-23 09:46:49,305 - Knowledge - INFO - Progress: 61.2% | Files: 52/85 | Rate: 1.15 files/sec | Queue: 0
+2026-02-23 09:46:49,422 - Knowledge - INFO - [LLM_CALL] Completed: build_dependencies.sh:chunk1, Duration: 7325ms, PromptTokens: 3716, CompletionTokens: 59, Cost: $0.00040
+2026-02-23 09:46:49,479 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/WSEndpoint.cpp
+2026-02-23 09:46:49,760 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/build_dependencies.sh
+2026-02-23 09:46:49,996 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/PingPong/PingPongDisabled.h
+2026-02-23 09:46:50,135 - Knowledge - INFO - Processing batch of 1 files
+2026-02-23 09:46:50,431 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/PingPong/PingPongEnabled.h
+2026-02-23 09:46:50,451 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/build_dependencies.sh
+2026-02-23 09:46:51,274 - Knowledge - INFO - [LLM_CALL] Completed: JsonRpcInterface.h:chunk1, Duration: 12883ms, PromptTokens: 4560, CompletionTokens: 760, Cost: $0.00076
+2026-02-23 09:46:51,487 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/CommunicationInterface/JsonRpcInterface.h
+2026-02-23 09:46:55,550 - Knowledge - INFO - [LLM_CALL] Completed: frontpanel.cpp:chunk1, Duration: 17132ms, PromptTokens: 10970, CompletionTokens: 1304, Cost: $0.00162
+2026-02-23 09:46:55,826 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/frontpanel.cpp
+2026-02-23 09:46:55,832 - Knowledge - INFO - [LLM_CALL] Completed: TlsEnabled.h:chunk1, Duration: 20814ms, PromptTokens: 4474, CompletionTokens: 699, Cost: $0.00073
+2026-02-23 09:46:56,238 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/Encryption/TlsEnabled.h
+2026-02-23 09:46:57,026 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:46:57,313 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Response.h
+2026-02-23 09:46:57,764 - Knowledge - INFO - [LLM_CALL] Completed: UtilsString.h:chunk1, Duration: 15637ms, PromptTokens: 4406, CompletionTokens: 664, Cost: $0.00071
+2026-02-23 09:46:57,972 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Notification.h
+2026-02-23 09:46:58,074 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsString.h
+2026-02-23 09:46:58,397 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:46:58,652 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/Encryption/TlsEnabled.h
+2026-02-23 09:46:58,844 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/JsonRpc/Request.h
+2026-02-23 09:46:59,062 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/Encryption/NoEncryption.h
+2026-02-23 09:46:59,074 - Knowledge - INFO - [LLM_CALL] Completed: Bluetooth.cpp:chunk2, Duration: 20649ms, PromptTokens: 17206, CompletionTokens: 1476, Cost: $0.00231
+2026-02-23 09:46:59,182 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/frontpanel.cpp
+2026-02-23 09:46:59,474 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/CommunicationInterface/BinaryInterface.h
+2026-02-23 09:46:59,910 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/WebSockets/CommunicationInterface/JsonRpcInterface.h
+2026-02-23 09:47:01,403 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:47:01,641 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsProcess.h
+2026-02-23 09:47:01,862 - Knowledge - INFO - [LLM_CALL] Completed: services.cmake:chunk1, Duration: 11018ms, PromptTokens: 2898, CompletionTokens: 301, Cost: $0.00041
+2026-02-23 09:47:02,111 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/services.cmake
+2026-02-23 09:47:02,113 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsString.h
+2026-02-23 09:47:04,939 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 270, Duration: 0ms
+2026-02-23 09:47:05,291 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsisValidInt.h
+2026-02-23 09:47:05,309 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 370ms
+2026-02-23 09:47:05,679 - Knowledge - INFO - Progress: 76.5% | Files: 65/85 | Rate: 1.06 files/sec | Queue: 0
+2026-02-23 09:47:05,915 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilssyncPersistFile.h
+2026-02-23 09:47:08,382 - Knowledge - INFO - [LLM_CALL] Completed: UtilsJsonRpc.h:chunk1, Duration: 26249ms, PromptTokens: 3886, CompletionTokens: 355, Cost: $0.00053
+2026-02-23 09:47:08,598 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsJsonRpc.h
+2026-02-23 09:47:09,549 - Knowledge - INFO - [LLM_CALL] Completed: UtilsSynchroIarm.hpp:chunk1, Duration: 20910ms, PromptTokens: 2510, CompletionTokens: 400, Cost: $0.00041
+2026-02-23 09:47:09,821 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsSynchroIarm.hpp
+2026-02-23 09:47:10,520 - Knowledge - INFO - [LLM_CALL] Completed: cSettings.h:chunk1, Duration: 32128ms, PromptTokens: 3594, CompletionTokens: 446, Cost: $0.00054
+2026-02-23 09:47:10,797 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/cSettings.h
+2026-02-23 09:47:11,645 - Knowledge - INFO - [LLM_CALL] Completed: UtilsController.h:chunk1, Duration: 28299ms, PromptTokens: 4040, CompletionTokens: 675, Cost: $0.00067
+2026-02-23 09:47:11,932 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsController.h
+2026-02-23 09:47:13,150 - Knowledge - INFO - [LLM_CALL] Completed: tptimer.h:chunk1, Duration: 22662ms, PromptTokens: 2254, CompletionTokens: 563, Cost: $0.00045
+2026-02-23 09:47:13,398 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/tptimer.h
+2026-02-23 09:47:13,605 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:47:13,843 - Knowledge - INFO - [LLM_CALL] Completed: UtilsInputValidator.h:chunk1, Duration: 24930ms, PromptTokens: 4868, CompletionTokens: 536, Cost: $0.00070
+2026-02-23 09:47:13,911 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/cSettings.h
+2026-02-23 09:47:14,128 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsInputValidator.h
+2026-02-23 09:47:14,421 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsBIT.h
+2026-02-23 09:47:14,770 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsJsonRpc.h
+2026-02-23 09:47:15,525 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:47:15,674 - Knowledge - INFO - [LLM_CALL] Completed: frontpanel.h:chunk1, Duration: 32233ms, PromptTokens: 2494, CompletionTokens: 1322, Cost: $0.00078
+2026-02-23 09:47:15,754 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsCStr.h
+2026-02-23 09:47:15,820 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsSynchroIarm.hpp
+2026-02-23 09:47:15,882 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/frontpanel.h
+2026-02-23 09:47:16,186 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsController.h
+2026-02-23 09:47:16,328 - Knowledge - INFO - [LLM_CALL] Completed: UtilsSynchro.hpp:chunk1, Duration: 22630ms, PromptTokens: 2892, CompletionTokens: 508, Cost: $0.00049
+2026-02-23 09:47:16,892 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsUnused.h
+2026-02-23 09:47:16,905 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsSynchro.hpp
+2026-02-23 09:47:17,078 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:47:17,097 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/tptimer.h
+2026-02-23 09:47:17,344 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/frontpanel.h
+2026-02-23 09:47:17,766 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/services.cmake
+2026-02-23 09:47:17,792 - Knowledge - INFO - [LLM_CALL] Completed: PluginInterfaceBuilder.h:chunk1, Duration: 36498ms, PromptTokens: 2806, CompletionTokens: 424, Cost: $0.00045
+2026-02-23 09:47:18,044 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/PluginInterfaceBuilder.h
+2026-02-23 09:47:18,106 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/CONTRIBUTING.md
+2026-02-23 09:47:18,110 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 269, Duration: 0ms
+2026-02-23 09:47:18,361 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/CHANGELOG.md
+2026-02-23 09:47:18,450 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 340ms
+2026-02-23 09:47:18,656 - Knowledge - INFO - Progress: 90.6% | Files: 78/85 | Rate: 1.04 files/sec | Queue: 0
+2026-02-23 09:47:18,736 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:47:18,946 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsLogging.h
+2026-02-23 09:47:19,146 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/PluginInterfaceBuilder.h
+2026-02-23 09:47:19,324 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsInputValidator.h
+2026-02-23 09:47:19,526 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/helpers/UtilsSynchro.hpp
+2026-02-23 09:47:22,796 - Knowledge - INFO - [LLM_CALL] Completed: Bluetooth.cpp:chunk3, Duration: 23322ms, PromptTokens: 11308, CompletionTokens: 1476, Cost: $0.00172
+2026-02-23 09:47:23,004 - Knowledge - INFO - done ingest for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/Bluetooth.cpp
+2026-02-23 09:47:23,266 - Knowledge - INFO - Processing batch of 4 files
+2026-02-23 09:47:23,499 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/cmake/FindBTMGR.cmake
+2026-02-23 09:47:23,681 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/README.md
+2026-02-23 09:47:23,885 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/Bluetooth.cpp
+2026-02-23 09:47:24,096 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/325511/b8153bi/entservices-connectivity-325511/Bluetooth/Module.cpp
+2026-02-23 09:47:24,676 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 271, Duration: 0ms
+2026-02-23 09:47:24,848 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 172ms
+2026-02-23 09:47:25,033 - Knowledge - INFO - Progress: 100.0% | Files: 85/85 | Rate: 1.04 files/sec | Queue: 0
+2026-02-23 09:47:25,227 - Knowledge - INFO - Knowledge creation complete
+2026-02-23 09:47:25,386 - Knowledge - INFO - ==================================================
+2026-02-23 09:47:25,564 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2026-02-23 09:47:25,734 - Knowledge - INFO - ==================================================
+2026-02-23 09:47:25,930 - Knowledge - INFO - Total processing time: 82.30 seconds (1.37 minutes)
+2026-02-23 09:47:26,137 - Knowledge - INFO - Files processed: 0
+2026-02-23 09:47:26,290 - Knowledge - INFO - Processing rate: 0.00 files/second
+2026-02-23 09:47:26,468 - Knowledge - INFO - 
+[TIME_BREAKDOWN]
+2026-02-23 09:47:26,642 - Knowledge - INFO - File Reading: 0.00s (0.0%)
+2026-02-23 09:47:26,788 - Knowledge - INFO - LLM Processing: 452.20s (549.4%)
+2026-02-23 09:47:26,936 - Knowledge - INFO - MongoDB Operations: 0.00s (0.0%)
+2026-02-23 09:47:27,104 - Knowledge - INFO - Redis Operations: 0.00s (0.0%)
+2026-02-23 09:47:27,311 - Knowledge - INFO - WebSocket Communication: 7.67s (9.3%)
+2026-02-23 09:47:27,478 - Knowledge - INFO - 
+[LLM_STATS]
+2026-02-23 09:47:27,654 - Knowledge - INFO - Total LLM calls: 25
+2026-02-23 09:47:27,857 - Knowledge - INFO - Average LLM response time: 18088ms
+2026-02-23 09:47:28,069 - Knowledge - INFO - Average prompt tokens: 5245.1
+2026-02-23 09:47:28,265 - Knowledge - INFO - Average completion tokens: 659.9
+2026-02-23 09:47:28,428 - Knowledge - INFO - Total prompt tokens: 131128
+2026-02-23 09:47:28,606 - Knowledge - INFO - Total completion tokens: 16497
+2026-02-23 09:47:28,845 - Knowledge - INFO - Total LLM cost: $0.0197
+2026-02-23 09:47:28,994 - Knowledge - INFO - 
+[DATABASE_STATS]
+2026-02-23 09:47:29,159 - Knowledge - INFO - MongoDB operations: 0
+2026-02-23 09:47:29,317 - Knowledge - INFO - Redis operations: 0
+2026-02-23 09:47:29,493 - Knowledge - INFO - 
+[COMMUNICATION_STATS]
+2026-02-23 09:47:29,669 - Knowledge - INFO - WebSocket messages sent: 17
+2026-02-23 09:47:29,868 - Knowledge - INFO - Average message size: 137.4 bytes
+2026-02-23 09:47:30,059 - Knowledge - INFO - 
+[WORKER_STATS]
+2026-02-23 09:47:30,228 - Knowledge - INFO - 
+[FILE_TYPE_STATS]
+2026-02-23 09:47:30,391 - Knowledge - INFO - 
+[SLOWEST_FILES]
+2026-02-23 09:47:30,555 - Knowledge - INFO - ==================================================
+2026-02-23 09:47:30,726 - Knowledge - INFO - ==================================================
+2026-02-23 09:47:30,937 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2026-02-23 09:47:31,165 - Knowledge - INFO - ==================================================
+2026-02-23 09:47:31,340 - Knowledge - INFO - Total processing time: 87.73 seconds (1.46 minutes)
+2026-02-23 09:47:31,507 - Knowledge - INFO - Files processed: 85 of 85
+2026-02-23 09:47:31,714 - Knowledge - INFO - Processing rate: 0.97 files/second
+2026-02-23 09:47:31,876 - Knowledge - INFO - WebSocket messages sent: 8
+2026-02-23 09:47:32,042 - Knowledge - INFO - MongoDB operations: 85
+2026-02-23 09:47:32,205 - Knowledge - INFO - Average MongoDB ops per file: 1.00
+2026-02-23 09:47:32,386 - Knowledge - INFO - LLM costs: $0.0197
+2026-02-23 09:47:32,564 - Knowledge - INFO - Prompt tokens: 131128
+2026-02-23 09:47:32,722 - Knowledge - INFO - Completion tokens: 16497
+2026-02-23 09:47:32,898 - Knowledge - INFO - Updating org costs, total cost: 0.0197116
+2026-02-23 09:47:34,373 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 265, Duration: 0ms
+2026-02-23 09:47:34,580 - Knowledge - INFO - Saving knowledge to Redis...
+2026-02-23 09:47:34,824 - Knowledge - INFO - Knowledge saved to Redis successfully
